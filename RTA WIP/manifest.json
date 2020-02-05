@@ -1,0 +1,25 @@
+  {
+    "name": "RTA WIP",
+    "description" : "Real-Time Performance Analysis",
+    "version": "1.0",
+    "manifest_version": 2,
+    "permissions": ["storage"],
+    "browser_action": {
+      "default_popup": "popup.html",
+      "default_icon": "icon.png",      
+
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+  }
+    },
+    "commands": {
+      "_execute_browser_action": {
+        "suggested_key": {
+          "default": "Ctrl+Shift+F",
+          "mac": "MacCtrl+Shift+F"
+        }
+        
+      }
+    }
+  }
